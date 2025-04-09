@@ -28,27 +28,47 @@ Below is an example of a less-than-ideal visualization from the collection linke
 
 1.  While there are certainly issues with this image, do your best to tell the story of this graph in words. That is, what is this graph telling you? What do you think the authors meant to convey with it?
 
-    F
+    This graph tells the story of the world regions and their level of belief that vaccines are safe by each country in that region. It is trying to show the regions that have the greatest and least belief that vaccines are safe, and shows within that region, which countries have the greatest and least belief in vaccines.
+
+    The authors mean to convey the region's overall belief in vaccines, in addition to specific countries in that region. With the inclusion of the regional medians, we can compare the regions against each other. We can also compare the countries in that region against their regional median.
+
+    In terms of regional medians, we learn that Asia has the highest belief in vaccines while the Former Soviet Union has the lowest belief in vaccines.
 
 2.  List the variables that appear to be displayed in this visualization. *Hint: Variables refer to columns in the data.*
 
-    F
+    -   Global region
+    -   Country
+    -   Percentage of people who believe in vaccines
 
 3.  Now that you're versed in the grammar of graphics (e.g., `ggplot`), list the *aesthetics* used and which *variables* are mapped to each.
 
-    F
+    -   x-axis: percentage of people who believe in vaccines
+
+    -   y-axis: country
+
+    -   color: region
+
+    -   facet: region
+
+    -   text labels: all regions and some countries (low and high within regions)
+
+    -   vertical lines: regional medians
 
 4.  What type of graph would you call this? Meaning, what `geom` would you use to produce this plot?
 
-    F
+    `geom_point()`
 
 5.  Provide at least four problems or changes that would improve this graph. *Please format your changes as bullet points!*
 
-    layout, legend, colors, country labels
+-   Fix the layout (y-axis), right now it doesn't provide useful information about the countries so remove the y-axis
+-   Remove the legend, it is just providing repeat information
+-   Provide some consistency along the country labels, right now it seems like they are being randomly labeled within each region
+-   Change the "%" in the title to "Percentage"
+-   Add "%" to the x-axis labels
 
 ## Improving the Bad Visualization
 
-The data for the Wellcome Global Monitor 2018 report can be downloaded at the following site: [https://wellcome.ac.uk/reports/wellcome-global-monitor/2018](https://wellcome.org/sites/default/files/wgm2018-dataset-crosstabs-all-countries.xlsx)
+The data for the Welcome Global Monitor 2018 report can be downloaded at the following site: [https://wellcome.ac.uk/reports/wellcome-global-monitor/2018](https://wellcome.org/sites/default/files/wgm2018-dataset-crosstabs-all-countries.xlsx)
 
 <!-- at the "Dataset and crosstabs for all countries" link on the right side of the page-->
 
